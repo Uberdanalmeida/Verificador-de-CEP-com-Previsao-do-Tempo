@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="Project">
-        <h1>Verificador de CEPs</h1>
-        <div id="local">
-            <input type="number" name="" id="cep" placeholder="Digite um CEP válido">
-            <button onclick="Ceps()">Buscar</button>
-            <p id="resul"></p>
-        </div>
-        <script src="script.js"></script>
+
+    <main class="container">
+
+        <section id="Project">
+            <h1>Verificador de CEPs</h1>
+
+            <div id="local">
+                <input type="number" id="cep" placeholder="Digite um CEP válido">
+                <button onclick="Ceps()">Buscar</button>
+                <p id="resul"></p>
+            </div>
+        </section>
+
+        <aside id="tempo">
+            <!-- Previsão do tempo -->
+        </aside>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
