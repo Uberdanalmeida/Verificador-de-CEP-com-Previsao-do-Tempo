@@ -6,20 +6,28 @@
 
 body {
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
+/* Container principal */
+.container {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* Card CEP */
 #Project {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  width: 100%;
-  max-width: 500px;
+  width: 500px;
+  min-height: 400px;
 }
 
 #local {
@@ -34,6 +42,11 @@ button {
   background-color: #007aff;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0062cc;
 }
 
 input,
@@ -55,8 +68,72 @@ button {
   word-wrap: break-word;
 }
 
-/* MOBILE */
-@media (max-width: 480px) {
+/* Card da previsão */
+#tempo {
+  width: 260px;
+  min-height: 400px;
+  padding: 20px;
+  background: linear-gradient(135deg, #4facfe, #00c6fb);
+  border-radius: 12px;
+  color: white;
+  display: none;
+}
+
+#tempo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topo-clima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.local-clima {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 0.7;
+}
+
+.local-clima strong {
+    display: block;
+    font-size: 1rem;
+}
+
+.local-clima span {
+    font-size: .95rem;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.icone {
+  font-size: 60px;
+}
+
+.info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.info div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 768px) {
   body {
     background-image: url(Imagens/busca-cep.jpg);
     background-repeat: no-repeat;
@@ -65,11 +142,25 @@ button {
     padding: 15px;
   }
 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   #Project {
     width: 100%;
     max-width: 350px;
-    background-color: rgb(255, 255, 255);
+    min-height: auto;
+    background: #fff;
     padding: 25px 15px;
+  }
+
+  #tempo {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+    margin-top: 20px;
   }
 
   #cep,
@@ -88,14 +179,14 @@ button {
   #resul {
     margin-top: 10px;
     padding: 10px;
-    background-color: #fff;
+    background: #fff;
     color: black;
     font-weight: 500;
     font-size: 0.95em;
   }
 
   h1 {
-    font-weight: 900;
     font-size: 1.5rem;
+    font-weight: 900;
   }
 }
