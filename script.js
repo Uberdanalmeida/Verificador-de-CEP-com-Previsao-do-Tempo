@@ -84,4 +84,11 @@ async function Ceps() {
     lugar.innerHTML = "Erro ao buscar o CEP.";
     console.log(erro);
   }
+
+  const inputCep = document.getElementById("cep");
+
+// ...
+
+inputCep.value = "";
+inputCep.focus();
 }
