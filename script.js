@@ -92,3 +92,9 @@ async function Ceps() {
 inputCep.value = "";
 inputCep.focus();
 }
+
+document.getElementById("cep").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        Ceps();
+    }
+});
