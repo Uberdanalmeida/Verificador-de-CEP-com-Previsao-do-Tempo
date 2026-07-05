@@ -74,8 +74,6 @@ No modo mobile o layout é reorganizado automaticamente e utiliza um efeito de v
 
 ---
 
-## 📖 Aprendizados
-
 Durante o desenvolvimento deste projeto foram praticados conceitos como:
 
 - Consumo de APIs REST
@@ -103,6 +101,6 @@ Durante o desenvolvimento deste projeto foram praticados conceitos como:
 
 Desenvolvido por **Uberdan Almeida**.
 
-LinkedIn: https://www.linkedin.com/
+LinkedIn: https://www.linkedin.com/in/uberdanalmeida/
 
-GitHub: https://github.com/
+GitHub: https://github.com/Uberdanalmeida
