@@ -73,38 +73,38 @@ button {
   width: 260px;
   min-height: 400px;
   padding: 20px;
-  background: linear-gradient(135deg, #4facfe, #00c6fb);
+  background: linear-gradient(135deg, #6db3f2, #a8d8f5);
   border-radius: 12px;
   color: white;
   display: none;
 }
 
 #tempo h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .topo-clima {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 15px;
 }
 
 .local-clima {
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 0.7;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 0.7;
 }
 
 .local-clima strong {
-    display: block;
-    font-size: 1rem;
+  display: block;
+  font-size: 1rem;
 }
 
 .local-clima span {
-    font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .temp {
@@ -171,21 +171,21 @@ button {
     border-radius: 15px;
 
     color: #fff;
-}
+  }
 
-.info div {
+  .info div {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
     color: white;
-}
+  }
 
-#tempo,
-#tempo h2,
-#tempo .temp,
-#tempo .local-clima {
-    text-shadow: 0 2px 6px rgba(0, 0, 0, .6);
-}
+  #tempo,
+  #tempo h2,
+  #tempo .temp,
+  #tempo .local-clima {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  }
 
   #cep,
   button {
