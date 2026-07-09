@@ -1,4 +1,4 @@
-![Verificador de CEPs](Imagens/verificador-cep.png)
+![Verificador de CEPs](Imagens/cep-previsao-tempo.png)
 
 # 📍 Verificador de CEP com Previsão do Tempo
 
