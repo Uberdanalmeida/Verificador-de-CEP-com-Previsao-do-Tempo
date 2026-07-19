@@ -70,7 +70,7 @@ O projeto foi desenvolvido para funcionar em:
 - 📱 Smartphones
 - 📟 Tablets
 
-No modo mobile o layout é reorganizado automaticamente e utiliza um efeito de vidro (*Glassmorphism*) para integrar o card da previsão do tempo ao plano de fundo.
+No modo mobile o layout é reorganizado automaticamente e utiliza um efeito de vidro (_Glassmorphism_) para integrar o card da previsão do tempo ao plano de fundo.
 
 ---
 

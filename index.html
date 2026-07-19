@@ -1,32 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificar CEP/Previsão do Tempo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="container">
+      <section id="Project">
+        <h1>Verificador de CEPs</h1>
 
-        <section id="Project">
-            <h1>Verificador de CEPs</h1>
+        <div id="local">
+          <input type="number" id="cep" placeholder="Digite um CEP válido" />
+          <button onclick="Ceps()">Buscar</button>
+          <p id="resul"></p>
+        </div>
+      </section>
 
-            <div id="local">
-                <input type="number" id="cep" placeholder="Digite um CEP válido">
-                <button onclick="Ceps()">Buscar</button>
-                <p id="resul"></p>
-            </div>
-        </section>
-
-        <aside id="tempo">
-            <!-- Previsão do tempo -->
-        </aside>
-
+      <aside id="tempo">
+        <!-- Previsão do tempo -->
+      </aside>
     </main>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

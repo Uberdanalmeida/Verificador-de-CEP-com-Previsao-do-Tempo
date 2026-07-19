@@ -6,7 +6,6 @@ async function Ceps() {
   tempo.style.display = "none";
 
   try {
-
     // ViaCEP
     const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     const data = await response.json();
@@ -24,7 +23,7 @@ async function Ceps() {
 
     // Geolocalização da cidade
     const geo = await fetch(
-      `https://geocoding-api.open-meteo.com/v1/search?name=${data.localidade}&count=1`
+      `https://geocoding-api.open-meteo.com/v1/search?name=${data.localidade}&count=1`,
     );
 
     const geoData = await geo.json();
@@ -33,7 +32,7 @@ async function Ceps() {
 
     // Previsão do tempo
     const clima = await fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=auto`
+      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=auto`,
     );
 
     const climaData = await clima.json();
@@ -52,7 +51,7 @@ async function Ceps() {
       65: "🌧️",
       71: "❄️",
       80: "🌦️",
-      95: "⛈️"
+      95: "⛈️",
     };
 
     const icone = icones[climaData.current.weather_code] || "🌍";
@@ -79,7 +78,6 @@ async function Ceps() {
         <div>💨 Vento<br>${climaData.current.wind_speed_10m} km/h</div>
     </div>
 `;
-
   } catch (erro) {
     lugar.innerHTML = "Erro ao buscar o CEP.";
     console.log(erro);
@@ -87,14 +85,14 @@ async function Ceps() {
 
   const inputCep = document.getElementById("cep");
 
-// ...
+  // ...
 
-inputCep.value = "";
-inputCep.focus();
+  inputCep.value = "";
+  inputCep.focus();
 }
 
-document.getElementById("cep").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        Ceps();
-    }
+document.getElementById("cep").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    Ceps();
+  }
 });
