@@ -1,3 +1,5 @@
+![Verificador de CEPs](imagens/verificar-cep.png)
+
 # Verificador de CEPs
 
 Aplicação web desenvolvida com HTML, CSS e JavaScript para consulta de endereços a partir de um CEP. O projeto utiliza a API pública ViaCEP para realizar a busca e apresentar as informações de localização diretamente na página.
