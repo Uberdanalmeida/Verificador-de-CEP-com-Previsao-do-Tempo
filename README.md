@@ -1,106 +1,46 @@
-![Verificador de CEPs](Imagens/cep-previsao-tempo.png)
+# Verificador de CEPs
 
-# 📍 Verificador de CEP com Previsão do Tempo
+Aplicação web desenvolvida com HTML, CSS e JavaScript para consulta de endereços a partir de um CEP. O projeto utiliza a API pública ViaCEP para realizar a busca e apresentar as informações de localização diretamente na página.
 
-Um projeto desenvolvido com **HTML**, **CSS** e **JavaScript** que permite consultar um CEP utilizando a API do **ViaCEP** e exibir, em tempo real, a previsão do tempo da localidade através da API **Open-Meteo**.
+## Sobre o projeto
 
----
+O **Verificador de CEPs** permite que o usuário informe um CEP válido e consulte seus respectivos dados de endereço.
 
-## 🚀 Funcionalidades
+Após a consulta, a aplicação apresenta:
 
-- 🔎 Consulta de CEP em tempo real.
-- 📍 Exibição do:
-  - Logradouro
-  - Bairro
-  - Cidade
-  - Estado
-- 🌤️ Exibição da previsão do tempo da região:
-  - Temperatura atual
-  - Temperatura máxima
-  - Temperatura mínima
-  - Umidade
-  - Velocidade do vento
-  - Ícone representando o clima
-- 📱 Layout responsivo para dispositivos móveis.
-- 🎨 Interface moderna utilizando Flexbox e Glassmorphism no mobile.
+- Logradouro;
+- Bairro;
+- Cidade;
+- Estado (UF).
 
----
+A interface foi desenvolvida com foco em simplicidade, organização e responsividade, permitindo a utilização tanto em computadores quanto em dispositivos móveis.
 
-## 🛠️ Tecnologias utilizadas
+## Funcionalidades
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Fetch API
+- Consulta de CEP utilizando a API ViaCEP;
+- Exibição dos dados do endereço;
+- Validação de CEP não encontrado;
+- Tratamento de erros durante a consulta;
+- Busca utilizando o botão **Buscar**;
+- Busca utilizando a tecla **Enter**;
+- Limpeza automática do campo após a consulta;
+- Foco automático no campo de CEP após a pesquisa;
+- Layout responsivo para dispositivos móveis;
+- Interface adaptada para diferentes tamanhos de tela.
 
----
+## Tecnologias utilizadas
 
-## 🌐 APIs utilizadas
+- **HTML5** — estrutura e organização da aplicação;
+- **CSS3** — estilização, layout e responsividade;
+- **JavaScript** — lógica da aplicação, eventos e consumo da API;
+- **Fetch API** — realização das requisições HTTP;
+- **ViaCEP** — API utilizada para consulta dos dados de endereço.
 
-### ViaCEP
+## API utilizada
 
-Responsável por consultar os dados do endereço a partir do CEP.
+O projeto utiliza a **ViaCEP**, uma API pública para consulta de informações de endereço através do CEP.
 
-https://viacep.com.br/
+Endpoint utilizado:
 
-### Open-Meteo
-
-Responsável pela geolocalização da cidade e pela previsão do tempo.
-
-https://open-meteo.com/
-
----
-
-## 💻 Como utilizar
-
-1. Digite um CEP válido.
-2. Clique em **Buscar**.
-3. Aguarde alguns segundos.
-4. O sistema exibirá:
-   - Endereço correspondente ao CEP.
-   - Previsão do tempo da localidade.
-
----
-
-## 📱 Responsividade
-
-O projeto foi desenvolvido para funcionar em:
-
-- 💻 Desktop
-- 📱 Smartphones
-- 📟 Tablets
-
-No modo mobile o layout é reorganizado automaticamente e utiliza um efeito de vidro (_Glassmorphism_) para integrar o card da previsão do tempo ao plano de fundo.
-
----
-
-Durante o desenvolvimento deste projeto foram praticados conceitos como:
-
-- Consumo de APIs REST
-- Programação assíncrona com `async/await`
-- Manipulação do DOM
-- Fetch API
-- Flexbox
-- CSS Grid
-- Responsividade
-- Tratamento de erros
-- Organização de código JavaScript
-
----
-
-- [ ] Exibir previsão para os próximos dias.
-- [ ] Mostrar sensação térmica.
-- [ ] Adicionar animações na busca.
-- [ ] Permitir busca utilizando a localização do usuário.
-- [ ] Trocar o plano de fundo conforme o clima.
-- [ ] Adicionar modo escuro.
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Uberdan Almeida**.
-
-LinkedIn: https://www.linkedin.com/in/uberdanalmeida/
-
-GitHub: https://github.com/Uberdanalmeida
+```text
+https://viacep.com.br/ws/{CEP}/json/
